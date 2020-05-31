@@ -3,16 +3,13 @@
     <div class="window">
       <div class="loading" v-if="loading">
         <div class="logo">
-          <img src="@/assets/images/logo.svg" alt="n.eko" />
-          <span><b>N</b>.EKO</span>
+          <span><b>simply</b>alec</span>
         </div>
         <div class="loader">
           <div class="bounce1"></div>
           <div class="bounce2"></div>
         </div>
       </div>
-
-      <div class="markdown-body" v-if="!loading" v-html="about"></div>
     </div>
   </div>
 </template>
