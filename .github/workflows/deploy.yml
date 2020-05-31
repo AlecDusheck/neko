@@ -2,10 +2,8 @@ name: deploy
 
 on:
   push:
-    branches: [ master ]
-    paths:
-      - 'client/**'
-      - 'server/**'
+    branches:
+      - master
 
 jobs:
   deploy:

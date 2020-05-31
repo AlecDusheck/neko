@@ -1,11 +1,9 @@
 name: build
 
 on:
-  pull_request:
-    branches: [ master ]
-    paths:
-      - 'client/**'
-      - 'server/**'
+  push:
+    branches:
+      - master
 
 jobs:
   build:
