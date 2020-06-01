@@ -1,4 +1,4 @@
-FROM nurdism/neko:deps
+FROM simplyalec/neko:deps
 
 #
 # avoid warnings by switching to noninteractive
