@@ -24,7 +24,8 @@ jobs:
         ./build
 
     - name: Build gst
-        run: .docker/build gst
+      working-directory: .docker
+      run: ./build gst
 
     - name: Get npm dependencies and build Client
       working-directory: client
