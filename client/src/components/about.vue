@@ -3,7 +3,7 @@
     <div class="window">
       <div class="loading" v-if="loading">
         <div class="logo">
-          <span><b>simply</b>alec</span>
+          <span><b>simply</b>streaming</span>
         </div>
         <div class="loader">
           <div class="bounce1"></div>

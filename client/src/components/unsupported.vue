@@ -2,7 +2,7 @@
   <div class="unsupported">
     <div class="window">
       <div class="logo">
-        <span><b>simply</b>alec</span>
+        <span><b>simply</b>streaming</span>
       </div>
       <div class="message">
         <span>{{ $t('unsupported') }}</span>

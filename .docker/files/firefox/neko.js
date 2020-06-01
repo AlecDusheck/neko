@@ -25,7 +25,7 @@ lockPref("browser.safebrowsing.downloads.remote.enabled",	false);
 lockPref("browser.helperApps.alwaysAsk.force",	false);
 lockPref("browser.helperApps.neverAsk.saveToDisk",	"application/zip,application/octet-stream,image/jpeg,application/vnd.ms-outlook,text/html,application/pdf");
 lockPref("browser.helperApps.neverAsk.openFile",	"application/zip,application/octet-stream,image/jpeg,application/vnd.ms-outlook,text/html,application/pdf");
-lockPref("browser.newtabpage.activity-stream.default.sites",	"https://www.youtube.com/,https://netflix.com,https://www.hulu.com/,https://9anime.to/,https://www.funimation.com/,https://www.disneyplus.com/,https://play.hbonow.com/,https://www.twitch.tv/");
+lockPref("browser.newtabpage.activity-stream.default.sites",	"s1.tedflix.info");
 // dark mode
 lockPref("reader.color_scheme", "dark");
 lockPref("devtools.theme", "dark");

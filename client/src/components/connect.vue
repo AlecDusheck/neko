@@ -2,7 +2,7 @@
   <div class="connect">
     <div class="window">
       <div class="logo">
-        <span><b>simply</b>alec</span>
+        <span><b>simply</b>streaming</span>
       </div>
       <form class="message" v-if="!connecting" @submit.stop.prevent="connect">
         <span>{{ $t('connect.title') }}</span>

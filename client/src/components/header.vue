@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="neko">
-      <span><b>simply</b>alec</span>
+      <span><b>simply</b>streaming</span>
     </div>
     <ul class="menu">
       <li>
