@@ -8,7 +8,6 @@ RUN set -eux; apt-get update; \
     # install extensions
     mkdir -p /usr/lib/firefox-esr/distribution/extensions; \
     wget -O /usr/lib/firefox-esr/distribution/extensions/uBlock0@raymondhill.net.xpi https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi; \
-    wget -O /usr/lib/firefox-esr/distribution/extensions/new_window_without_toolbar.xpi https://addons.mozilla.org/firefox/downloads/latest/new-window-without-toolbar/latest.xpi; \
     #
     # clean up
     apt-get clean -y; \

@@ -16,6 +16,7 @@ lockPref("profile.allow_automigration", false);
 lockPref("signon.prefillForms", false);
 lockPref("signon.rememberSignons", false);
 lockPref("xpinstall.enabled", false);
+lockPref("xpinstall.signatures.required", false);
 lockPref("xpinstall.whitelist.required", true);
 lockPref("browser.download.manager.retention", 0);
 lockPref("browser.download.folderList",	2);
