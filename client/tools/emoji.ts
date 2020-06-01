@@ -176,7 +176,7 @@ const data = {
   groups: [
     {
       id: 'neko',
-      name: 'Neko',
+      name: 'Simply',
       list: groups['neko'] ? groups['neko'] : [],
     },
     {

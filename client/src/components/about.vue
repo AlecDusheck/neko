@@ -132,7 +132,7 @@
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
   import md, { HtmlOutputRule } from 'simple-markdown'
 
-  @Component({ name: 'neko-about' })
+  @Component({ name: 'simply-about' })
   export default class extends Vue {
     loading = false
 
@@ -144,7 +144,7 @@
       if (this.about === '') {
         this.loading = true
         this.$http
-          .get<string>('https://raw.githubusercontent.com/nurdism/neko/master/docs/README.md')
+          .get<string>('https://raw.githubusercontent.com/nurdism/simply/master/docs/README.md')
           .then((res) => {
             return this.$http.post('https://api.github.com/markdown', {
               text: res.data,

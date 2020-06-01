@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="neko">
+    <div class="simply">
       <span><b>simply</b>streaming</span>
     </div>
     <ul class="menu">
@@ -37,7 +37,7 @@
     flex-direction: row;
     align-items: center;
 
-    .neko {
+    .simply {
       flex: 1;
       display: flex;
       justify-content: flex-start;
@@ -101,7 +101,7 @@
 <script lang="ts">
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
 
-  @Component({ name: 'neko-settings' })
+  @Component({ name: 'simply-settings' })
   export default class extends Vue {
     get admin() {
       return this.$accessor.user.admin

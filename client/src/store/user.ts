@@ -1,6 +1,6 @@
 import { getterTree, mutationTree, actionTree } from 'typed-vuex'
-import { Member } from '~/neko/types'
-import { EVENT } from '~/neko/events'
+import { Member } from '~/simply/types'
+import { EVENT } from '~/simply/events'
 
 import { accessor } from '~/store'
 

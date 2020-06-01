@@ -11,7 +11,7 @@
               <span>{{ member(message.id).displayname }}</span>
               <span class="timestamp">{{ timestamp(message.created) }}</span>
             </div>
-            <neko-markdown class="content-body" :source="message.content" />
+            <simply-markdown class="content-body" :source="message.content" />
           </div>
         </li>
         <li :key="index" class="event" v-if="message.type === 'event'">
@@ -31,12 +31,12 @@
         </li>
       </template>
     </ul>
-    <neko-context ref="context" />
+    <simply-context ref="context" />
     <div v-if="!muted" class="chat-send">
       <div class="accent" />
       <div class="text-container">
         <textarea ref="input" :placeholder="$t('send_a_message')" @keydown="onKeyDown" v-model="content" />
-        <neko-emoji v-if="emoji" @picked="onEmojiPicked" @done="emoji = false" />
+        <simply-emoji v-if="emoji" @picked="onEmojiPicked" @done="emoji = false" />
         <i class="emoji-menu fas fa-laugh" @click.stop.prevent="onEmoji"></i>
       </div>
     </div>
@@ -324,7 +324,7 @@
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
   import { formatRelative } from 'date-fns'
 
-  import { Member } from '~/neko/types'
+  import { Member } from '~/simply/types'
 
   import Markdown from './markdown'
   import Content from './context.vue'
@@ -333,11 +333,11 @@
   const length = 512 // max length of message
 
   @Component({
-    name: 'neko-chat',
+    name: 'simply-chat',
     components: {
-      'neko-markdown': Markdown,
-      'neko-context': Content,
-      'neko-emoji': Emoji,
+      'simply-markdown': Markdown,
+      'simply-context': Content,
+      'simply-emoji': Emoji,
     },
   })
   export default class extends Vue {

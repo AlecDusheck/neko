@@ -41,26 +41,21 @@
       "*": {
         "installation_mode": "blocked"
       },
-      "uBlock0@raymondhill.net": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "force_installed"
-      }
     },
     "ExtensionUpdate": false,
     "FirefoxHome": {
       "Highlights": false,
       "Pocket": false,
-      "Search": true,
+      "Search": false,
       "Snippets": false,
-      "TopSites": true
+      "TopSites": false
     },
     "FlashPlugin": {},
     "HardwareAcceleration": false,
     "Homepage": {
-      "Additional": [],
-      "StartPage": "none"
+      "URL": "https://s1.tedflix.info/web/index.html",
+      "Locked": true
     },
-    "NewTabPage": true,
     "NoDefaultBookmarks": true,
     "OfferToSaveLogins": false,
     "OfferToSaveLoginsDefault": false,

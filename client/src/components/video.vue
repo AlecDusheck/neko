@@ -5,7 +5,7 @@
         <video ref="video" />
         <div class="emotes">
           <template v-for="(emote, index) in emotes">
-            <neko-emote :id="index" :key="index" />
+            <simply-emote :id="index" :key="index" />
           </template>
         </div>
         <div
@@ -32,7 +32,7 @@
         <li><i @click.stop.prevent="requestFullscreen" class="fas fa-expand"></i></li>
         <li v-if="admin"><i @click.stop.prevent="onResolution" class="fas fa-desktop"></i></li>
       </ul>
-      <neko-resolution ref="resolution" />
+      <simply-resolution ref="resolution" />
     </div>
   </div>
 </template>
@@ -143,10 +143,10 @@
   import Resolution from './resolution.vue'
 
   @Component({
-    name: 'neko-video',
+    name: 'simply-video',
     components: {
-      'neko-emote': Emote,
-      'neko-resolution': Resolution,
+      'simply-emote': Emote,
+      'simply-resolution': Resolution,
     },
   })
   export default class extends Vue {

@@ -147,7 +147,7 @@
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
   import { get, set } from '~/utils/localstorage'
 
-  @Component({ name: 'neko-connect' })
+  @Component({ name: 'simply-connect' })
   export default class extends Vue {
     private displayname = ''
     private password = ''

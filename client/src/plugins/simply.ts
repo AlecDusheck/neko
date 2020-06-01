@@ -1,23 +1,23 @@
 import { PluginObject } from 'vue'
-import { NekoClient } from '~/neko'
+import { SimplyClient } from '~/simply'
 
 declare global {
-  const $client: NekoClient
+  const $client: SimplyClient
 
   interface Window {
-    $client: NekoClient
+    $client: SimplyClient
   }
 }
 
 declare module 'vue/types/vue' {
   interface Vue {
-    $client: NekoClient
+    $client: SimplyClient
   }
 }
 
 const plugin: PluginObject<undefined> = {
   install(Vue) {
-    window.$client = new NekoClient()
+    window.$client = new SimplyClient()
       .on('error', window.$log.error)
       .on('warn', window.$log.warn)
       .on('info', window.$log.info)

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { useAccessor, mutationTree, actionTree } from 'typed-vuex'
-import { EVENT } from '~/neko/events'
+import { EVENT } from '~/simply/events'
 import { get, set } from '~/utils/localstorage'
 
 import * as video from './video'

@@ -1,41 +1,41 @@
 <template>
-  <div id="neko" :class="[side ? 'expanded' : '']">
+  <div id="simply" :class="[side ? 'expanded' : '']">
     <template v-if="!$client.supported">
-      <neko-unsupported />
+      <simply-unsupported />
     </template>
     <template v-else>
-      <main class="neko-main">
+      <main class="simply-main">
         <div class="header-container">
-          <neko-header />
+          <simply-header />
         </div>
         <div class="video-container">
-          <neko-video ref="video" />
+          <simply-video ref="video" />
         </div>
         <div class="room-container">
-          <neko-members />
+          <simply-members />
           <div class="room-menu">
             <div class="settings">
-              <neko-menu />
+              <simply-menu />
             </div>
             <div class="controls">
-              <neko-controls />
+              <simply-controls />
             </div>
             <div class="emotes">
-              <neko-emotes />
+              <simply-emotes />
             </div>
           </div>
         </div>
       </main>
-      <neko-side v-if="side" />
-      <neko-connect v-if="!connected" />
-      <neko-about v-if="about" />
-      <notifications group="neko" position="top left" style="top: 50px;" />
+      <simply-side v-if="side" />
+      <simply-connect v-if="!connected" />
+      <simply-about v-if="about" />
+      <notifications group="simply" position="top left" style="top: 50px;" />
     </template>
   </div>
 </template>
 
 <style lang="scss">
-  #neko {
+  #simply {
     position: absolute;
     top: 0;
     left: 0;
@@ -46,7 +46,7 @@
     flex-direction: row;
     display: flex;
 
-    .neko-main {
+    .simply-main {
       min-width: 360px;
       max-width: 100%;
       flex-grow: 1;
@@ -109,12 +109,12 @@
   }
 
   @media only screen and (max-width: 600px) {
-    #neko {
+    #simply {
       &.expanded {
-        .neko-main {
+        .simply-main {
           transform: translateX(-$side-width);
         }
-        .neko-menu {
+        .simply-menu {
           transform: translateX(-$side-width);
         }
       }
@@ -122,8 +122,8 @@
   }
 
   @media only screen and (max-width: 768px) {
-    #neko {
-      .neko-main {
+    #simply {
+      .simply-main {
         .room-container {
           display: none;
         }
@@ -147,18 +147,18 @@
   import Unsupported from '~/components/unsupported.vue'
 
   @Component({
-    name: 'neko',
+    name: 'simply',
     components: {
-      'neko-connect': Connect,
-      'neko-video': Video,
-      'neko-menu': Menu,
-      'neko-side': Side,
-      'neko-controls': Controls,
-      'neko-members': Members,
-      'neko-emotes': Emotes,
-      'neko-about': About,
-      'neko-header': Header,
-      'neko-unsupported': Unsupported,
+      'simply-connect': Connect,
+      'simply-video': Video,
+      'simply-menu': Menu,
+      'simply-side': Side,
+      'simply-controls': Controls,
+      'simply-members': Members,
+      'simply-emotes': Emotes,
+      'simply-about': About,
+      'simply-header': Header,
+      'simply-unsupported': Unsupported,
     },
   })
   export default class extends Vue {

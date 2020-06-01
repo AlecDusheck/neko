@@ -98,13 +98,13 @@
 
 <script lang="ts">
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
-  import { ScreenResolution } from '~/neko/types'
+  import { ScreenResolution } from '~/simply/types'
 
   // @ts-ignore
   import { VueContext } from 'vue-context'
 
   @Component({
-    name: 'neko-resolution',
+    name: 'simply-resolution',
     components: {
       'vue-context': VueContext,
     },

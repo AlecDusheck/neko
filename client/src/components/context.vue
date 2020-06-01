@@ -133,13 +133,13 @@
 
 <script lang="ts">
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
-  import { Member } from '~/neko/types'
+  import { Member } from '~/simply/types'
 
   // @ts-ignore
   import { VueContext } from 'vue-context'
 
   @Component({
-    name: 'neko-context',
+    name: 'simply-context',
     components: {
       'vue-context': VueContext,
     },

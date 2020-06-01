@@ -33,7 +33,7 @@
 <script lang="ts">
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
 
-  @Component({ name: 'neko-menu' })
+  @Component({ name: 'simply-menu' })
   export default class extends Vue {
     get admin() {
       return this.$accessor.user.admin

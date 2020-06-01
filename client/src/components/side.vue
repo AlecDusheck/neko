@@ -1,5 +1,5 @@
 <template>
-  <aside class="neko-menu">
+  <aside class="simply-menu">
     <div class="tabs-container">
       <ul>
         <li :class="{ active: tab === 'chat' }" @click.stop.prevent="change('chat')">
@@ -13,14 +13,14 @@
       </ul>
     </div>
     <div class="page-container">
-      <neko-chat v-if="tab === 'chat'" />
-      <neko-settings v-if="tab === 'settings'" />
+      <simply-chat v-if="tab === 'chat'" />
+      <simply-settings v-if="tab === 'settings'" />
     </div>
   </aside>
 </template>
 
 <style lang="scss">
-  .neko-menu {
+  .simply-menu {
     width: $side-width;
     background-color: $background-primary;
     flex-shrink: 0;
@@ -80,10 +80,10 @@
   import Chat from '~/components/chat.vue'
 
   @Component({
-    name: 'neko',
+    name: 'simply',
     components: {
-      'neko-settings': Settings,
-      'neko-chat': Chat,
+      'simply-settings': Settings,
+      'simply-chat': Chat,
     },
   })
   export default class extends Vue {

@@ -23,7 +23,7 @@
         </template>
       </ul>
     </div>
-    <neko-context ref="context" />
+    <simply-context ref="context" />
   </div>
 </template>
 
@@ -158,14 +158,14 @@
 
 <script lang="ts">
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
-  import { Member } from '~/neko/types'
+  import { Member } from '~/simply/types'
 
   import Content from './context.vue'
 
   @Component({
-    name: 'neko-members',
+    name: 'simply-members',
     components: {
-      'neko-context': Content,
+      'simply-context': Content,
     },
   })
   export default class extends Vue {

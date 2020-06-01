@@ -197,7 +197,7 @@
 <script lang="ts">
   import { Vue, Component } from 'vue-property-decorator'
 
-  @Component({ name: 'neko-controls' })
+  @Component({ name: 'simply-controls' })
   export default class extends Vue {
     get isTouch() {
       return (

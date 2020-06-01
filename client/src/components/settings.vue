@@ -190,7 +190,7 @@
 <script lang="ts">
   import { Component, Ref, Watch, Vue } from 'vue-property-decorator'
 
-  @Component({ name: 'neko-settings' })
+  @Component({ name: 'simply-settings' })
   export default class extends Vue {
     get connected() {
       return this.$accessor.connected
