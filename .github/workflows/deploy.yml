@@ -30,7 +30,7 @@ jobs:
         run: docker build -f ./.docker/files/base/Dockerfile -t simplyalec/neko:base .
 
       - name: Build the latest image
-        run: docker build -f ./.docker/files/firefox/Dockerfile -t simplyalec/neko:latest .
+        run: docker build -f ./.docker/files/chromium/Dockerfile -t simplyalec/neko:latest .
 
       - name: Push the Docker images
         run: |
