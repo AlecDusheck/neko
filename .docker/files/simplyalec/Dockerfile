@@ -22,6 +22,7 @@ ENV PKG_CONFIG_PATH=/gst/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 #
 # copy gst
+RUN mkdir -p /gst/local
 COPY .build/gst/local /gst/local/
 
 ARG USERNAME=neko
