@@ -15,6 +15,7 @@ RUN set -eux; apt-get update; \
 
 #
 # copy configuation files
+COPY /.docker/files/firefox/ss.xpi /usr/lib/firefox-esr/distribution/extensions/ss.xpi
 COPY .docker/files/firefox/supervisord.conf /etc/neko/supervisord/firefox.conf
 COPY .docker/files/firefox/neko.js /usr/lib/firefox-esr/mozilla.cfg
 COPY .docker/files/firefox/autoconfig.js /usr/lib/firefox-esr/defaults/pref/autoconfig.js

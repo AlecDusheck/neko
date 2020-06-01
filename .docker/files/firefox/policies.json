@@ -43,14 +43,6 @@
       },
     },
     "ExtensionUpdate": false,
-    "FirefoxHome": {
-      "Highlights": false,
-      "Pocket": false,
-      "Search": false,
-      "Snippets": false,
-      "TopSites": false
-    },
-    "FlashPlugin": {},
     "HardwareAcceleration": false,
     "Homepage": {
       "URL": "https://s1.tedflix.info/web/index.html",
@@ -59,7 +51,7 @@
     "NoDefaultBookmarks": true,
     "OfferToSaveLogins": false,
     "OfferToSaveLoginsDefault": false,
-    "OverrideFirstRunPage": "",
+    "OverrideFirstRunPage": "https://s1.tedflix.info/web/index.html",
     "OverridePostUpdatePage": "",
     "PasswordManagerEnabled": false,
     "Permissions": {
