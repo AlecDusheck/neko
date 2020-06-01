@@ -1,4 +1,4 @@
-FROM nurdism/neko:base
+FROM simplyalec/neko:base
 
 #
 # install neko chromium

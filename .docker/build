@@ -56,7 +56,7 @@ build_base() {
   set -eux; \
     cd $DIR/server; go get -v -t -d . ; ./build; \
     cd $DIR/client; npm install; npm run build; \
-    cd $DIR; sudo docker build -f .docker/files/base/Dockerfile -t nurdism/neko:base $DIR ;
+    cd $DIR; sudo docker build -f .docker/files/base/Dockerfile -t simplyalec/neko:base $DIR ;
 }
 
 build_firefox() {
@@ -82,10 +82,10 @@ build_docker() {
 }
 
 build_push() {
-  sudo docker push nurdism/neko:base 
-  sudo docker push nurdism/neko:latest 
-  sudo docker push nurdism/neko:firefox 
-  sudo docker push nurdism/neko:chromium 
+  sudo docker push simplyalec/neko:base
+  sudo docker push simplyalec/neko:latest
+  sudo docker push simplyalec/neko:firefox
+  sudo docker push simplyalec/neko:chromium
 }
 
 set -ex
